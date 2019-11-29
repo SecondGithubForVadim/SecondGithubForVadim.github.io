@@ -57,7 +57,7 @@ nav {
 }
 
 .desk-navbar {
-	width: 61.5%;
+	width: 50%;
 	display: none;
 }
 
@@ -148,7 +148,7 @@ nav {
 
 .slider {
 	position: absolute;
-	right: 2.5%;
+	right: 0;
 	top: 30%;
 	max-width: 400px;
 	display: none;
@@ -337,7 +337,7 @@ footer h2 {
 		display: block;
 	}
 	.main-desk {
-        width: 70%;
+        width: 60%;
         max-width: 1024px;
 		margin: auto;
 		text-align: left;
@@ -369,7 +369,7 @@ footer h2 {
 		margin-top: 0;
 	}
 	.portfolio {
-        width: 70%;
+        width: 60%;
         margin: 1024px;
 		margin: auto;
 		text-align: left;
@@ -381,7 +381,7 @@ footer h2 {
 		justify-content: space-between;
 	}
 	.box {
-		margin-right: 1%;
+		margin-right: 2%;
 	}
 	.portfolio-container div:last-child {
 		margin-right: 0;
@@ -389,7 +389,7 @@ footer h2 {
 	.contact-us {
 		display: flex;
 		flex-direction: column;
-        width: 70%;
+        width: 60%;
         margin: 1024px;
 		margin: auto;
 		text-align: left;

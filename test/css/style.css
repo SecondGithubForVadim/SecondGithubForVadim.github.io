@@ -7,7 +7,7 @@
 body {
 	color: #314584;
 	font-family: 'Work Sans', sans-serif;
-	font-size: 18px;
+	/* font-size: 18px; */
 }
 
 header {
@@ -20,6 +20,7 @@ a {
 	font-weight: 600;
 	color: #314584;
 	letter-spacing: 1px;
+	font-size: 12px;
 }
 
 li {
@@ -30,11 +31,17 @@ nav {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	padding-left: 8%;
-	padding-right: 20%;
-	justify-content: space-between;
-	align-items: center;
+	/* padding-left: 8%; */
+	/* padding-right: 20%; */
+	/* justify-content: space-between; */
+	align-items: flex-end;
 	margin-top: 50px;
+}
+
+.logo{
+	width: 20%;
+	display: flex;
+	justify-content: center;
 }
 
 .mobile-menu {
@@ -57,13 +64,14 @@ nav {
 }
 
 .desk-navbar {
-	width: 57%;
+	width: 60%;
+	/* margin: auto; */
 	display: none;
 }
 
 .navbar {
 	display: inline-block;
-	width: 100%;
+	width: 45%;
 }
 
 .nav-item {
@@ -146,16 +154,7 @@ nav {
 	margin-top: 10%;
 }
 
-.slider {
-	position: absolute;
-	right: 2%;
-	top: 30%;
-	max-width: 400px;
-	display: none;
-}
-
 .main-desk img {
-	width: 430px;
 	display: none;
 }
 
@@ -189,9 +188,10 @@ nav {
 }
 
 .box {
-	width: 220px;
-	height: 150px;
-	margin-top: 3%;
+	min-width: 370px;
+	height: 280px;
+	margin-top: 33px;
+	border: solid 1px black;
 	background-color: rgb(195, 208, 216);
 }
 
@@ -221,7 +221,8 @@ h2 {
 
 textarea {
 	width: 100%;
-	margin-top: 3%;
+	margin-top: 40px;
+	margin-bottom: 65px;
 	background-color: rgb(244, 250, 254);
 	border: none;
 	font-weight: 600;
@@ -232,8 +233,8 @@ textarea {
 }
 
 input {
-	width: 100%;
-	height: 35px;
+	/* width: 100%; */
+	height: 60px;
 	background-color: rgb(244, 250, 254);
 	border: none;
 	margin-top: 1%;
@@ -244,11 +245,9 @@ input {
 	padding: 1%;
 }
 
-.submit {
-	width: 100%;
-	margin: auto;
+form{
+	margin-bottom: 58px;
 	text-align: center;
-	padding: 10%;
 }
 
 footer {
@@ -312,7 +311,7 @@ footer h2 {
 	background-color: #FF3946;
 	border: 2px solid #FF3946;
 	color: #fff;
-	padding: 10px 25px;
+	/* padding: 10px 25px; */
 	border-radius: 30px;
 	-webkit-box-shadow: 0px 4px 5px 0px rgba(255, 57, 70, 0.15);
 	-moz-box-shadow: 0px 4px 5px 0px rgba(255, 57, 70, 0.15);
@@ -321,45 +320,51 @@ footer h2 {
 
 @media (min-width: 768px) {
 	body {
-		font-size: 14px;
+		font-size: 12px;
 	}
 	header {
-        height: 100vh;
+		height: 100vh;
+		position: relative;
 	}
 	.menu-btn {
 		display: none;
 	}
 	.desk-navbar {
-		display: inline-block;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 	}
 	.contact-btn {
 		display: block;
 	}
 	.main-desk {
         width: 60%;
-        max-width: 1024px;
 		margin: auto;
 		text-align: left;
-		display: block;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 	.container {
-		width: 65%;
+		width: 45%;
 		margin-left: 0;
 	}
 	.main-desk h1 {
 		margin-top: 40%;
-		font-size: 3rem;
+		font-size: 4rem;
 	}
 	.main-desk p {
-		font-size: .8rem;
+		font-size: 1.05rem;
 		color: #6E757A;
 		margin-top: 10%;
 	}
-	.slider {
-		display: block;
-	}
 	.main-desk img {
 		display: block;
+		width: 680px;
+		position: absolute;
+		top: 130px;
+		right: 6%;
 	}
 	.main-btns {
 		text-align: left;
@@ -369,27 +374,27 @@ footer h2 {
 	}
 	.portfolio {
         width: 60%;
-        margin: 1024px;
 		margin: auto;
 		text-align: left;
 		height: 100vh;
 	}
 	.portfolio-container {
+		width: 100%;
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-	.box {
-		margin-right: 2%;
+	/* .box {
+		margin-right: 1%;
 	}
 	.portfolio-container div:last-child {
 		margin-right: 0;
-	}
+	} */
 	.contact-us {
 		display: flex;
 		flex-direction: column;
         width: 60%;
-        margin: 1024px;
 		margin: auto;
 		text-align: left;
 	}
